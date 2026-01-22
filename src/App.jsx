@@ -1,7 +1,7 @@
 import { useState } from "react";
 import viteLogo from "/vite.svg";
 import bgImage from "../assets/bg-image.png";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import Text from "./components/Text";
 
 
