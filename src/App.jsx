@@ -1,6 +1,6 @@
 import { useState } from "react";
 import viteLogo from "/vite.svg";
-import bgImage from "../assets/bg-image.png";
+import bgImage from "/assets/bg-image.png";
 import Navbar from "./components/Navbar";
 import Text from "./components/Text";
 
