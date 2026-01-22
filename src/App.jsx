@@ -14,7 +14,7 @@ function App() {
       <div className="absolute inset-0 bg-black/50" />
 
       <Navbar />
-      <div className=" flex absolute  ">
+      <div className=" flex   ">
 
         <Text />
       </div>
