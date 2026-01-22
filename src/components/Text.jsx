@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Text = () => {
     return (
-        <div className="flex flex-col  items-baseline justify-center z-5 min-[1440px]:ml-60 ml-20  ">
+        <div className="flex flex-col  mt-[200px] mb-25 items-baseline justify-center z-5 min-[1440px]:ml-60 ml-20  ">
             <h1 className="relative font-bold text-white text-left
                text-[32px] 
                md:text-[48px]

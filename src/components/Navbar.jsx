@@ -15,11 +15,11 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-[9px] p-4 z-50">
+            <nav className="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-[9px] p-4  z-50">
                 <div className="flex justify-between items-center min-[1440px]:px-60 px-6 mx-auto">
 
                     <div className="flex items-center gap-2">
-                        <img src="./assets/logo1.png" className="scale-80" alt="logo" />
+                        <img src="/assets/logo1.png" className="scale-80" alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>
                         </p>
