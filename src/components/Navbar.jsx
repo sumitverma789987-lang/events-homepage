@@ -38,7 +38,7 @@ const Navbar = () => {
                             padding="px-5 py-2"
                             rounded="rounded-[23px]"
                             font="font-semibold"
-                            hover='hover:bg-white hover:scale-105 transition-all duration-200 ease-in-out hover:text-[#2C49FE]' />
+                            hover='hover:bg-white hover:scale-105 transition-all duration-500 ease-in-out hover:text-[#2C49FE]' />
 
                         
                     </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
 
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed top-6 right-6 flex flex-col gap-1  min-[1200px]:hidden z-[1001]"
+                className="fixed top-6 right-6 flex flex-col gap-1 mt-5 ml-5 min-[1200px]:hidden z-[1001]"
             >
                 <span className={`w-7 h-[3px] bg-white rounded transition ${isOpen && "rotate-45 translate-y-[7px]"}`} />
                 <span className={`w-7 h-[3px] bg-white rounded transition ${isOpen && "opacity-0"}`} />
@@ -85,7 +85,9 @@ const Navbar = () => {
                         padding="px-6 py-2"
                         rounded="rounded-[23px]"
                         font="font-semibold"
-                    />
+                        hover='hover:bg-white hover:scale-105 transition-all duration-500 ease-in-out hover:text-[#2C49FE]' />
+
+                    
                 </div>
             </div>
         </>
