@@ -20,7 +20,7 @@ const Second = () => {
 
     return (
 
-        <div className="flex min-h-screen flex-col min-[1300px]:flex-row items-center justify-between mx-4 md:mx-10 lg:mx-20 gap-12 p-5 ">
+        <div className="flex min-h-screen flex-col min-[1300px]:flex-row items-center justify-center mx-4 md:mx-10 lg:mx-20 gap-12 p-5 ">
             <div className="relative flex items-center justify-center overflow-hidden">
                 {!playVideo ? (
                     <div
@@ -59,7 +59,7 @@ const Second = () => {
 
 
             <div className="w-full lg:w-1/2 flex flex-col  justify-center items-start ">
-                <div className='flex  flex-col relative '>
+                <div className='flex  flex-col relative  '>
                     <span
                         className="absolute bg-[#2C49FE]
               w-[120px] md:w-[166px]
@@ -77,9 +77,9 @@ const Second = () => {
                     <p className='text-[14px] md:text-[16px]  font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
 
                 </div>
-                <div className="flex flex-col items-center lg:items-center  w-full  justify-center ">
-                    <div className='flex flex-col  items-center lg:items-center justify-center'>
-                        <div className='flex md:flex-row  gap-6 flex-col items-start mt-5 justify-center'>
+                <div className="flex flex-col    w-full   justify-center items-center min-[1300px]:items-start  ">
+                    <div className='flex flex-col  justify-center items-center '>
+                        <div className='flex md:flex-row  gap-6 flex-col items-center mt-5  justify-center '>
 
                             <Box
                                 image={<Share />}
