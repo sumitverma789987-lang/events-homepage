@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { Cale, Locn, People } from "./icon";
+import { Cale, Locn, People } from "./Icon";
 
 const Text = () => {
     return (
