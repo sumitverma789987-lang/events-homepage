@@ -3,6 +3,7 @@ import Navbar from './components/navbar'
 import bgImage from '/assets/bg-image.png'
 import Text from './components/text'
 import Second from './components/second'
+import Third from './components/third'
 
 const Home = () => {
     return (
@@ -16,17 +17,19 @@ const Home = () => {
 
                 <div className="absolute inset-0 bg-black/50" />
 
-         
+
                 <div className="relative z-10 flex min-h-screen">
                     <Text />
                 </div>
             </section>
 
-    
+
             <section className="min-h-screen">
                 <Second />
             </section>
-
+            <section >
+                <Third />
+            </section>
         </div>
     )
 }

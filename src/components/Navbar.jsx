@@ -16,9 +16,9 @@ const Navbar = () => {
     return (
         < >
             <nav className="fixed  top-0 left-0 w-full bg-black/40 backdrop-blur-[9px] p-4  z-50">
-                <div className="flex justify-between items-center min-[1440px]:px-60  px-6 mx-auto">
+                <div className="flex justify-between items-center min-[1440px]:px-60 min-[500px]:px-6 px-0  mx-auto">
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 sm:scale-100 scale-70">
                         <img src="/assets/logo1.png" className="scale-80" alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>
@@ -47,7 +47,7 @@ const Navbar = () => {
 
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed top-6 right-6 flex flex-col gap-1 mt-5 ml-5 min-[1200px]:hidden z-[1001]"
+                className="fixed top-6 right-6 flex flex-col gap-1 mt-5 mr-3 min-[1200px]:hidden z-[1001] "
             >
                 <span className={`w-7 h-[3px] bg-white rounded transition ${isOpen && "rotate-45 translate-y-[7px]"}`} />
                 <span className={`w-7 h-[3px] bg-white rounded transition ${isOpen && "opacity-0"}`} />

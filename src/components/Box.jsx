@@ -2,7 +2,7 @@ import React from "react";
 
 function Box({ image, title, info, margin }) {
     return (
-        <div className={`flex  items-center justify-center relative bg-white max-w-65 ${margin} z-50`}>
+        <div className={`flex  items-center justify-center relative bg-white max-w-65 ${margin} `}>
             <div className="pt-12 w-full cursor-pointer flex flex-col justify-end
              text-center py-1 mt-5 hover:text-white hover:bg-[#2C49FE] duration-600
               ease-in-out bg-white text-[#2D3CAE] border border-[#2D3CAE] items-center px-5  rounded-sm z-10">
