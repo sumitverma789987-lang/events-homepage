@@ -3,7 +3,7 @@ import Navbar from './components/navbar'
 import bgImage from '/assets/bg-image.png'
 import Text from './components/text'
 import Second from './components/second'
-import Third from './components/third'
+import Third from './components/Third'
 
 const Home = () => {
     return (
