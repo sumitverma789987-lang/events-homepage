@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from './components/navbar'
 import bgImage from '/assets/bg-image.png'
-import Text from './components/text'
-import Second from './components/second'
+import Text from './components/Text'
+import Second from './components/Second'
 import Third from './components/Third'
 
 const Home = () => {
