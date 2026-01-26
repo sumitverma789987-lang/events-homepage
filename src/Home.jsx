@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import bgImage from '/assets/bg-image.png'
 import Text from './components/Text'
 import Second from './components/Second'
