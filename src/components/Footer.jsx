@@ -8,8 +8,8 @@ const Footer = () => {
                 className="   flex flex-col lg:flex-row mb-15  items-start justify-between gap-10  lg:px-20 xl:px-40 2xl:px-60 "
             >
 
-                <div className=' flex flex-col items-start justify-center'>
-                    <div className='flex flex-row items-center justify-center'>
+                <div className=' flex flex-col items-start gap-5 justify-center'>
+                    <div className='flex flex-row items-center  justify-center'>
                         <img src="/assets/logo1.png" className="scale-80" alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>

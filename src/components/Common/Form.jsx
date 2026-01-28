@@ -64,76 +64,88 @@ const Form = () => {
     }
 
     return (
-        <form
-            onSubmit={handleSubmit}
-            className="flex flex-col items-start justify-center w-full" >
+        <form onSubmit={handleSubmit} className="flex flex-col items-start justify-center w-full"
+>
+            <div className='flex flex-row gap-4 w-full'>
+                <div className='flex flex-col flex-1'>
 
-            <div className="flex gap-4 w-full">
-
-                <div className="flex flex-col flex-1">
                     <Input
                         type="text"
                         name="firstName"
-                        placeholder="Enter first name"
+                        placeholder="Enter name"
                         value={formData.firstName}
                         onChange={handleChange}
-                        error={errors.firstName}
+                        className={errors.firstName ? "border-red-500 focus:border-red-500" : ""}
+
                     />
+                    {errors.firstName && (
+                        <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>
+                    )}
                 </div>
 
+                <div className=' flex flex-col flex-1 '>
 
-                <div className="flex flex-col flex-1">
                     <Input
                         type="text"
                         name="lastName"
-                        placeholder="Enter last name"
+                        placeholder="Enter Last name"
                         value={formData.lastName}
                         onChange={handleChange}
-                        error={errors.lastName}
+                        className={errors.lastName ? "border-red-500 focus:border-red-500" : ""}
+
                     />
+                    <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>
                 </div>
             </div>
+            <div className='w-full my-5   flex-col'>
+                
 
-            <div className="flex flex-col w-full mt-5">
                 <Input
                     type="email"
                     name="email"
                     placeholder="Enter email"
                     value={formData.email}
                     onChange={handleChange}
-                    error={errors.email}
+                    className={errors.email ? "border-red-500 focus:border-red-500" : ""}
+
                 />
-            </div>
+                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+            </div >
 
+            <div className='flex w-full gap-4'>
+                <div className='flex flex-col flex-1'>
 
-            <div className="flex gap-4 w-full mt-5">
+                <Input
+                    type="password"
+                    name="password"
+                    placeholder="Enter password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    className={errors.password ? "border-red-500 focus:border-red-500" : ""}
 
-                <div className="flex flex-col flex-1">
-                    <Input
-                        type="password"
-                        name="password"
-                        placeholder="Enter password"
-                        value={formData.password}
-                        onChange={handleChange}
-                        error={errors.password}
-                    />
+                />
+                <p className="text-red-500 text-sm mt-1">{errors.password}</p>
+
+                </div>
+                <div className='flex flex-col flex-1'>
+
+                <Input
+                    type="password"
+                    name="confirmPassword"
+                    placeholder="confirm password"
+                    value={formData.confirmPassword}
+                    onChange={handleChange}
+                    className={errors.confirmPassword ? "border-red-500 focus:border-red-500" : ""}
+
+                />
+                <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>
                 </div>
 
 
-                <div className="flex flex-col flex-1">
-                    <Input
-                        type="password"
-                        name="confirmPassword"
-                        placeholder="Confirm password"
-                        value={formData.confirmPassword}
-                        onChange={handleChange}
-                        error={errors.confirmPassword}
-                    />
-                </div>
             </div>
 
 
-            <div className="flex flex-col w-full mt-5">
+            <div className="flex flex-col flex-1 w-full mt-5">
                 <textarea
                     name="about"
                     placeholder="About you"
@@ -150,11 +162,11 @@ const Form = () => {
                     padding="py-2"
                     rounded="rounded-[23px]"
                     font="font-semibold"
-                    hover="hover:bg-white hover:scale-105 transition-all duration-500 ease-in-out hover:text-[#2C49FE]"
+                    hover="hover:bg-white hover:scale-105 transition-all duration-500 border-2-[#2C49FE] border ease-in-out hover:text-[#2C49FE]"
                 />
             </div>
 
-        </form>
+            </form>
     )
 }
 
