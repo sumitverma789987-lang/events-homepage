@@ -15,7 +15,8 @@ const Footer = () => {
                             Events<span className="text-[#01c8ff]">Free</span>
                         </p>
                     </div>
-                    <p className='font-normal text-[14px] w-[320px]'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c </p>
+                    <p className='font-
+                     text-[14px] '> Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Nunc efficitur urna in dictum <br /> suscipit. Suspendisse maximus ipsum sem. c </p>
                     <div className='flex items-center justify-center mt-5 gap-4'>
                         < Insta />
                         <Facebook />

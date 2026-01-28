@@ -20,7 +20,7 @@ const Second = () => {
 
     return (
 
-        <div className="flex min-h-screen flex-col min-[1300px]:flex-row items-center justify-between mx-4 md:mx-10 ml-0 lg:ml-60 gap-12 p-5 ">
+        <div className="flex min-h-screen flex-col min-[1300px]:flex-row items-center justify-center  px-20 2xl:px-60  gap-15 xl:gap-22 p-5 ">
             <div className="relative flex items-center justify-center overflow-hidden">
                 {!playVideo ? (
                     <div
