@@ -74,7 +74,7 @@ const Second = () => {
                     </span>
 
                     <h1 className='text-[28px] md:text-[40px] lg:text-[48px] font-bold mt-8'> What make us special ?</h1>
-                    <p className='text-[14px] md:text-[16px]  font-normal max-w-[633px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
+                    <p className='text-[14px] md:text-[16px]  font-normal opacity-70 max-w-[633px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
 
                 </div>
                 <div className="flex flex-col    w-full   justify-center items-center min-[1300px]:items-start  ">

@@ -6,7 +6,7 @@ function Ecard({ image }) {
       <img className="xl:w-78.25 object-cover h-43.25 " src={image} alt="" />
       <span className="text-[14px] font-normal ml-3 mt-3">09/23/2021</span>
       <h3 className="text-[24px] font-medium ml-3">Lorem ipsum</h3>
-      <p className="text-[16px] font-normal w-[90%] ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in </p>
+      <p className="text-[16px] font-normal w-[90%] opacity-70 ml-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in </p>
     </div>
   );
 }

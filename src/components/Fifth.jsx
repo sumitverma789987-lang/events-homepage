@@ -37,27 +37,18 @@ const Fifth = () => {
               h-[6px] sm:h-[8px]
               z-0
             "
-          ></span>
+></span>
         </div>
 
    
         <h1
-          className="
-            font-bold
-            text-[32px] sm:text-[40px] lg:text-[48px]
-          "
-        >
+          className="font-bold text-[32px] sm:text-[40px] lg:text-[48px]">
           Join Us !
         </h1>
 
      
         <p
-          className="
-            font-normal
-            text-[14px] sm:text-[15px] lg:text-[16px]
-            max-w-full sm:max-w-[480px]
-            leading-relaxed
-          "
+          className="font-normal text-[14px] sm:text-[15px] lg:text-[16px] max-w-full sm:max-w-[480px] opacity-70"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem.
@@ -65,12 +56,7 @@ const Fifth = () => {
         </p>
 
    
-        <h3
-          className="
-            font-bold
-            text-[24px] sm:text-[28px] lg:text-[35px]
-          "
-        >
+        <h3 className="font-bold text-[24px] sm:text-[28px] lg:text-[35px]">
           Sign Up
         </h3>
 
