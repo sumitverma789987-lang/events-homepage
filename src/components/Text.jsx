@@ -68,7 +68,9 @@ const Text = () => {
 
                     <div className="flex flex-col text-white mx-3  min-[900px]:my-0 my-3 ">
                         <p className="font-medium text-[20px]">Location</p>
-                        <p className="font-normal text-[14px] opacity-50">Search by city</p>
+                        <p className="font-normal text-[14px] opacity-50 leading-none whitespace-nowrap">
+                            Search by city
+                        </p>
 
                     </div>
                 </div>
