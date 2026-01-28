@@ -51,11 +51,11 @@ const Text = () => {
                     font="font-semibold"
                     hover='hover:bg-white hover:scale-105 transition-all duration-500 ease-in-out hover:text-[#2C49FE]' />
 
-                <p className="font-normal text-white cursor-pointer
+                <p className="font-normal  text-white cursor-pointer
                 text-[16px]
                 md:text-[18px]
                 lg:text-[20px]">
-                    Learn more
+                    LearnMore
                 </p>
             </div>
 
