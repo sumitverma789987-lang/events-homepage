@@ -26,7 +26,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="hidden min-[1200px]:flex items-center gap-8 text-white">
-                        {["HOME", "EVENTS", "FEED", "USER NAME"].map((item) => (
+                        {["HOME", "EVENTS", "FEED", "USERNAME"].map((item) => (
                             <a key={item} className="cursor-pointer hover:font-semibold transition">
                                 {item}
                             </a>
