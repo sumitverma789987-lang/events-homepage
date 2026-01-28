@@ -22,21 +22,21 @@ const Form = () => {
     const validateForm = () => {
         let newErrors = {};
         if (!formData.firstName) {
-            newErrors.firstName = " first name is required";
+            newErrors.firstName = " First Name can not be empty";
         }
         if (!formData.lastName) {
-            newErrors.lastName = " last name is required";
+            newErrors.lastName = " Last Name can not be empty";
         }
         if (!formData.email) {
-            newErrors.email = " required email";
+            newErrors.email = " Email required";
         } else if (!isValidEmail(formData.email)) {
-            newErrors.email = " email invalid "
+            newErrors.email = " Invalid Email  "
         }
-        if (!formData.password) {
-            newErrors.password = "passoword needed"
-        }
-        if (!formData.confirmPassword) {
-            newErrors.confirmPassword = "confirm passowrd is required"
+        if (!formData.password) newErrors.password = "Password required";
+        if (!formData.confirmPassword)
+            newErrors.confirmPassword = "Confirm password required";
+        if (formData.password !== formData.confirmPassword) {
+            newErrors.confirmPassword = "confirm password must be same as password"
         }
 
         setErrors(newErrors);
@@ -72,7 +72,7 @@ const Form = () => {
                     <Input
                         type="text"
                         name="firstName"
-                        placeholder="Enter name"
+                        placeholder="First Name"
                         value={formData.firstName}
                         onChange={handleChange}
                         className={errors.firstName ? "border-red-500 focus:border-red-500" : ""}
@@ -88,7 +88,7 @@ const Form = () => {
                     <Input
                         type="text"
                         name="lastName"
-                        placeholder="Enter Last name"
+                        placeholder=" Last name"
                         value={formData.lastName}
                         onChange={handleChange}
                         className={errors.lastName ? "border-red-500 focus:border-red-500" : ""}
@@ -103,7 +103,7 @@ const Form = () => {
                 <Input
                     type="email"
                     name="email"
-                    placeholder="Enter email"
+                    placeholder=" Email Address"
                     value={formData.email}
                     onChange={handleChange}
                     className={errors.email ? "border-red-500 focus:border-red-500" : ""}
@@ -118,7 +118,7 @@ const Form = () => {
                 <Input
                     type="password"
                     name="password"
-                    placeholder="Enter password"
+                    placeholder=" Password"
                     value={formData.password}
                     onChange={handleChange}
                     className={errors.password ? "border-red-500 focus:border-red-500" : ""}
@@ -132,7 +132,7 @@ const Form = () => {
                 <Input
                     type="password"
                     name="confirmPassword"
-                    placeholder="confirm password"
+                    placeholder="Confirm Password"
                     value={formData.confirmPassword}
                     onChange={handleChange}
                     className={errors.confirmPassword ? "border-red-500 focus:border-red-500" : ""}
@@ -148,7 +148,7 @@ const Form = () => {
             <div className="flex flex-col flex-1 w-full mt-5">
                 <textarea
                     name="about"
-                    placeholder="About you"
+                    placeholder="About me"
                     value={formData.about}
                     onChange={handleChange}
                     className="border border-gray-300 rounded-md px-4 py-2 outline-none w-full h-28 resize-none focus:border-black"
