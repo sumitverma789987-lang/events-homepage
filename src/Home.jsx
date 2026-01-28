@@ -4,6 +4,9 @@ import bgImage from '/assets/bg-image.png'
 import Text from './components/Text'
 import Second from './components/Second'
 import Third from './components/Third'
+import Fourth from './components/Fourth'
+import Fifth from './components/Fifth'
+import Footer from './components/Footer'
 
 const Home = () => {
     return (
@@ -29,6 +32,15 @@ const Home = () => {
             </section>
             <section >
                 <Third />
+            </section>
+            <section >
+               <Fourth/>
+            </section>
+            <section >
+                <Fifth />
+            </section>
+            <section>
+                <Footer/>
             </section>
         </div>
     )

@@ -20,7 +20,7 @@ const Second = () => {
 
     return (
 
-        <div className="flex min-h-screen flex-col min-[1300px]:flex-row items-center justify-center mx-4 md:mx-10 lg:mx-20 gap-12 p-5 ">
+        <div className="flex min-h-screen flex-col min-[1300px]:flex-row items-center justify-between mx-4 md:mx-10 ml-0 lg:ml-60 gap-12 p-5 ">
             <div className="relative flex items-center justify-center overflow-hidden">
                 {!playVideo ? (
                     <div
@@ -74,12 +74,12 @@ const Second = () => {
                     </span>
 
                     <h1 className='text-[28px] md:text-[40px] lg:text-[48px] font-bold mt-8'> What make us special ?</h1>
-                    <p className='text-[14px] md:text-[16px]  font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
+                    <p className='text-[14px] md:text-[16px]  font-normal max-w-[633px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
 
                 </div>
                 <div className="flex flex-col    w-full   justify-center items-center min-[1300px]:items-start  ">
                     <div className='flex flex-col  justify-center items-center '>
-                        <div className='flex md:flex-row  gap-6 flex-col items-center mt-5  justify-center '>
+                        <div className='flex md:flex-row  gap-8 flex-col items-center mt-5  justify-center '>
 
                             <Box
                                 image={<Share />}

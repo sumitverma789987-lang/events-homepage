@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Button = ({ text, bgColor, textColor, font, padding, rounded, textSize, hover  }) => {
+const Button = ({
+    text,bgColor,type,textColor,font,padding,rounded,textSize,hover,}) => {
     return (
-        <div>
-            <button className={`cursor-pointer ${font} ${bgColor} ${textColor} ${padding} ${rounded}  ${textSize} ${hover}`}>{text}</button>
-        </div>
-    )
-}
+        <button
+            type={type}
+            className={`cursor-pointer w-full ${font} ${bgColor} ${textColor} ${padding} ${rounded} ${textSize} ${hover}`}
+        >
+            {text}
+        </button>
+    );
+};
 
-export default Button
+export default Button;
