@@ -6,7 +6,7 @@ import Second from '../Homepage/Second'
 import Third from '../Homepage/Third'
 import Fourth from '../Homepage/Fourth'
 import Fifth from '../Homepage/Fifth'
-import Footer from '../common/Footer'
+import Footer from '../Common/Footer'
 
 const Home = () => {
     return (

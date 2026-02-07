@@ -3,7 +3,7 @@ import First from '../Secondpage/First'
 import Navbar from '../Common/Navbar'
 import Gallery from '../Secondpage/Gallery'
 import Comments from '../Secondpage/Comments'
-import Footer from '../common/Footer'
+import Footer from '../Common/Footer'
 
 
 
