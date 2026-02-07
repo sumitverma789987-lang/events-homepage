@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "./Common/Form";
+import Form from "../Common/Form";
 
 const Fifth = () => {
   return (
@@ -12,12 +12,12 @@ const Fifth = () => {
         <img
           src="/assets/pillimage.png"
           alt="pill"
-          
+
         />
       </div>
 
       <div className="  flex flex-col gap-5 relative">
-      
+
         <div className="relative mb-3">
           <span
             className="
@@ -37,16 +37,16 @@ const Fifth = () => {
               h-[6px] sm:h-[8px]
               z-0
             "
-></span>
+          ></span>
         </div>
 
-   
+
         <h1
           className="font-bold text-[32px] sm:text-[40px] lg:text-[48px]">
           Join Us !
         </h1>
 
-     
+
         <p
           className="font-normal text-[14px] sm:text-[15px] lg:text-[16px] max-w-full sm:max-w-[480px] opacity-70"
         >
@@ -55,12 +55,12 @@ const Fifth = () => {
           Donec ut justo et leo congue.
         </p>
 
-   
+
         <h3 className="font-bold text-[24px] sm:text-[28px] lg:text-[35px]">
           Sign Up
         </h3>
 
-     
+
         <Form />
       </div>
     </div>

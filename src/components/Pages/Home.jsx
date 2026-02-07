@@ -1,22 +1,23 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Navbar from '../Common/Navbar'
 import bgImage from '/assets/bg-image.png'
-import Text from './components/Text'
-import Second from './components/Second'
-import Third from './components/Third'
-import Fourth from './components/Fourth'
-import Fifth from './components/Fifth'
-import Footer from './components/Footer'
+import Text from '../Homepage/Text'
+import Second from '../Homepage/Second'
+import Third from '../Homepage/Third'
+import Fourth from '../Homepage/Fourth'
+import Fifth from '../Homepage/Fifth'
+import Footer from '../common/Footer'
 
 const Home = () => {
     return (
         <div className="w-full">
+            <Navbar />
 
             <section
                 className="relative min-h-screen bg-cover bg-center"
                 style={{ backgroundImage: `url(${bgImage})` }}
             >
-                <Navbar />
+
 
                 <div className="absolute inset-0 bg-black/50" />
 
@@ -34,13 +35,13 @@ const Home = () => {
                 <Third />
             </section>
             <section >
-               <Fourth/>
+                <Fourth />
             </section>
             <section >
                 <Fifth />
             </section>
             <section>
-                <Footer/>
+                <Footer />
             </section>
         </div>
     )

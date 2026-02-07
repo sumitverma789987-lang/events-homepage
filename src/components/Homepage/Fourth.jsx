@@ -1,5 +1,5 @@
 import React from 'react'
-import Ecard from './Ecard'
+import Ecard from '../Common/Ecard'
 
 const Fourth = () => {
     return (
@@ -23,7 +23,7 @@ const Fourth = () => {
             </div>
             <div className='flex flex-col md:flex-row gap-5 items-center justify-center'>
                 <Ecard
-                image="/assets/card1.png" />
+                    image="/assets/card1.png" />
 
                 <Ecard
                     image="/assets/card2.png" />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Input from './Input'
-import Button from '../Button';
+import Button from './Button';
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -43,7 +43,7 @@ const Form = () => {
         return Object.keys(newErrors).length === 0;
     };
 
-    console.log(errors);
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -65,7 +65,7 @@ const Form = () => {
 
     return (
         <form onSubmit={handleSubmit} className="flex flex-col items-start justify-center w-full"
->
+        >
             <div className='flex flex-row gap-4 w-full'>
                 <div className='flex flex-col flex-1'>
 
@@ -98,7 +98,7 @@ const Form = () => {
                 </div>
             </div>
             <div className='w-full my-5   flex-col'>
-                
+
 
                 <Input
                     type="email"
@@ -115,30 +115,30 @@ const Form = () => {
             <div className='flex w-full gap-4'>
                 <div className='flex flex-col flex-1'>
 
-                <Input
-                    type="password"
-                    name="password"
-                    placeholder=" Password"
-                    value={formData.password}
-                    onChange={handleChange}
-                    className={errors.password ? "border-red-500 focus:border-red-500" : ""}
+                    <Input
+                        type="password"
+                        name="password"
+                        placeholder=" Password"
+                        value={formData.password}
+                        onChange={handleChange}
+                        className={errors.password ? "border-red-500 focus:border-red-500" : ""}
 
-                />
-                <p className="text-red-500 text-sm mt-1">{errors.password}</p>
+                    />
+                    <p className="text-red-500 text-sm mt-1">{errors.password}</p>
 
                 </div>
                 <div className='flex flex-col flex-1'>
 
-                <Input
-                    type="password"
-                    name="confirmPassword"
-                    placeholder="Confirm Password"
-                    value={formData.confirmPassword}
-                    onChange={handleChange}
-                    className={errors.confirmPassword ? "border-red-500 focus:border-red-500" : ""}
+                    <Input
+                        type="password"
+                        name="confirmPassword"
+                        placeholder="Confirm Password"
+                        value={formData.confirmPassword}
+                        onChange={handleChange}
+                        className={errors.confirmPassword ? "border-red-500 focus:border-red-500" : ""}
 
-                />
-                <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>
+                    />
+                    <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>
                 </div>
 
 
@@ -162,11 +162,11 @@ const Form = () => {
                     padding="py-2"
                     rounded="rounded-[23px]"
                     font="font-semibold"
-                    hover="hover:bg-white hover:scale-105 transition-all duration-500 border-2-[#2C49FE] border ease-in-out hover:text-[#2C49FE]"
+                    hover="hover:bg-white hover:scale-105 transition-all w-full duration-500 border-2-[#2C49FE] border ease-in-out hover:text-[#2C49FE]"
                 />
             </div>
 
-            </form>
+        </form>
     )
 }
 

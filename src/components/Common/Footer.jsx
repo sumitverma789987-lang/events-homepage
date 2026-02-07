@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col md:flex-row items-start justify-between gap-19 '>
                     <div className='flex flex-row items-start justify-between gap-10'>
-                        <ul className='gap-2  flex flex-col'>
+                        <ul className="gap-2 flex flex-col ">
                             <h4 className='text-[14px] font-bold'>SERVICES</h4>
                             <li className='font-normal text-[12px] cursor-pointer'>About</li>
                             <li className='font-normal text-[12px] cursor-pointer'>News</li>
@@ -35,7 +35,7 @@ const Footer = () => {
 
                         </ul>
                         <ul className='gap-2  flex flex-col'>
-                            <h4 className='text-[14px] font-bold'>EVENTS</h4>
+                            <h4 className=' text-[14px] font-bold'>EVENTS</h4>
                             <li className='font-normal text-[12px] cursor-pointer'>ullamcorper</li>
                             <li className='font-normal text-[12px] cursor-pointer'>ullamcorper</li>
                             <li className='font-normal text-[12px] cursor-pointer'>ullamcorper</li>
@@ -50,33 +50,33 @@ const Footer = () => {
 
 
                             <img
-                                src="/assets/image1.png"
+                                src="/assets/Footer/image1.png"
                                 alt="gallery1"
                                 className="  object-cover rounded-md"
                             />
 
                             <img
-                                src="/assets/image2.png"
+                                src="/assets/Footer/image2.png"
                                 alt="gallery2"
                                 className="  object-cover rounded-md"
                             />
 
 
                             <img
-                                src="/assets/image3.png"
+                                src="/assets/Footer/image3.png"
                                 alt="gallery3"
                                 className="  object-cover rounded-md"
                             />
 
 
                             <img
-                                src="/assets/image4.png"
+                                src="/assets/Footer/image4.png"
                                 alt="gallery4"
                                 className=" object-cover rounded-md"
                             />
 
                             <img
-                                src="/assets/image5.png"
+                                src="/assets/Footer/image5.png"
                                 alt="gallery5"
                                 className="  object-cover rounded-md"
                             />
@@ -98,7 +98,7 @@ const Footer = () => {
                 © Credits of companyName belong to companyName.
             </p>
         </footer>
-        
+
     )
 }
 

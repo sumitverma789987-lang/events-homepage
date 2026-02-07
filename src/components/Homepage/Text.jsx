@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import { Cale, Locn, People } from "./Icon";
+import Button from "../Common/Button";
+import { Cale, Locn, People } from "../Common/Icon";
 
 const Text = () => {
     return (
@@ -86,7 +86,7 @@ const Text = () => {
                 <span className="h-[74px] w-[3px] min-[900px]:flex hidden bg-white min-[1000px]:mx-[50px] mx-[20px]"></span>
                 <div className=" flex flex-row items-center justify-center">
 
-                    <People/>
+                    <People />
                     <div className="flex flex-col text-white mx-3 min-[900px]:my-0 my-3 min-[900px]:mb-0  mb-9">
                         <p className="font-medium text-xl">Capicity</p>
                         <p className="font-normal text-[14px] opacity-50">500 people</p>

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import Box from './Box'
-import { Help, Info, Play, Share } from "./Icon";
+import Box from '../Common/Box'
+import { Help, Info, Play, Share } from "../Common/Icon";
 
 const Second = () => {
     const [playVideo, setPlayVideo] = useState(false);
