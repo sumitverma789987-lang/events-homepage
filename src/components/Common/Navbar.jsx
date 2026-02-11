@@ -18,10 +18,10 @@ const Navbar = ({
         return () => window.removeEventListener("resize", onResize);
     }, []);
 
-    // Scroll listener
+    
     useEffect(() => {
         const onScroll = () => {
-            if (window.scrollY > 200) {
+            if (window.scrollY > 5) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -32,7 +32,6 @@ const Navbar = ({
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
-    // Determine current text color based on scroll state
     const currentTextColor = scrolled ? scrolledTextColor : textColor;
 
     const NavLinks = ({ mobile = false }) => (
