@@ -56,7 +56,7 @@ const Eventcards = () => {
 
                             <div className="flex items-center gap-2 text-gray-600 text-sm mb-4">
                                 <span><Janta /></span>
-                                <span>L660</span>
+                                <span>1660</span>
                             </div>
                             <Button
                                 text="Go Check"
