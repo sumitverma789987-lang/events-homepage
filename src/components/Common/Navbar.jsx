@@ -104,9 +104,9 @@ const Navbar = ({
                 onClick={() => setIsOpen(!isOpen)}
                 className="fixed top-6 right-6 flex flex-col gap-1 mt-5 mr-3 min-[1200px]:hidden z-[1001]"
             >
-                <span className={`w-7 h-[3px] ${currentTextColor} rounded transition-all ${isOpen && "rotate-45 translate-y-[7px]"}`} />
-                <span className={`w-7 h-[3px] ${currentTextColor} rounded transition-all ${isOpen && "opacity-0"}`} />
-                <span className={`w-7 h-[3px] ${currentTextColor} rounded transition-all ${isOpen && "-rotate-45 -translate-y-[7px]"}`} />
+                <span className={`w-7 h-[3px] rounded transition-all ${isOpen && "rotate-45 translate-y-[7px]"} ${scrolled ? 'bg-[#2C49FE]' : 'bg-[#2C49FE]'}`} />
+                <span className={`w-7 h-[3px] rounded transition-all ${isOpen && "opacity-0"} ${scrolled ? 'bg-[#2C49FE]' : 'bg-[#2C49FE]'}`} />
+                <span className={`w-7 h-[3px] rounded transition-all ${isOpen && "-rotate-45 -translate-y-[7px]"} ${scrolled ? 'bg-[#2C49FE]' : 'bg-[#2C49FE]'}`} />
             </button>
 
             <div
