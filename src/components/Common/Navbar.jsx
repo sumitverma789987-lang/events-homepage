@@ -2,8 +2,13 @@ import React, { useEffect, useState } from "react";
 import Button from "./Button";
 import { Link } from "react-router";
 
-const Navbar = () => {
+const Navbar = ({
+    bgColor = "bg-black/40",
+    textColor = "text-white",
+    scrolledTextColor = "text-black"
+}) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const onResize = () => {
@@ -13,12 +18,29 @@ const Navbar = () => {
         return () => window.removeEventListener("resize", onResize);
     }, []);
 
+    // Scroll listener
+    useEffect(() => {
+        const onScroll = () => {
+            if (window.scrollY > 200) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
+    // Determine current text color based on scroll state
+    const currentTextColor = scrolled ? scrolledTextColor : textColor;
+
     const NavLinks = ({ mobile = false }) => (
         <>
             <Link
                 to="/"
                 onClick={mobile ? () => setIsOpen(false) : undefined}
-                className={mobile ? "text-lg hover:text-[#2C49FE] transition cursor-pointer" : "hover:font-semibold transition"}
+                className={`${mobile ? "text-[16px] text-white" : currentTextColor} hover:text-[#2C49FE] transition cursor-pointer`}
             >
                 HOME
             </Link>
@@ -26,7 +48,7 @@ const Navbar = () => {
             <Link
                 to="/events"
                 onClick={mobile ? () => setIsOpen(false) : undefined}
-                className={mobile ? "text-lg hover:text-[#2C49FE] transition cursor-pointer" : "hover:font-semibold transition"}
+                className={`${mobile ? "text-[16px] text-white" : currentTextColor} hover:text-[#2C49FE] transition cursor-pointer`}
             >
                 EVENTS
             </Link>
@@ -34,7 +56,7 @@ const Navbar = () => {
             <Link
                 to="/feed"
                 onClick={mobile ? () => setIsOpen(false) : undefined}
-                className={mobile ? "text-lg hover:text-[#2C49FE] transition cursor-pointer" : "hover:font-semibold transition"}
+                className={`${mobile ? "text-[16px] text-white" : currentTextColor} hover:text-[#2C49FE] transition cursor-pointer`}
             >
                 FEED
             </Link>
@@ -42,7 +64,7 @@ const Navbar = () => {
             <Link
                 to="/username"
                 onClick={mobile ? () => setIsOpen(false) : undefined}
-                className={mobile ? "text-lg hover:text-[#2C49FE] transition cursor-pointer" : "hover:font-semibold transition"}
+                className={`${mobile ? "text-[16px] text-white" : currentTextColor} hover:text-[#2C49FE] transition cursor-pointer`}
             >
                 USERNAME
             </Link>
@@ -61,9 +83,9 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="fixed top-0 left-0 w-full  bg-black/40 backdrop-blur-[9px] p-4 z-50">
+            <nav className={`fixed top-0 left-0 w-full p-4 z-50 transition-all duration-300 ${scrolled ? `${bgColor} backdrop-blur-[9px]` : 'bg-transparent'}`}>
                 <div className="flex justify-between items-center min-[1440px]:px-60 min-[500px]:px-6 px-0 mx-auto">
-                
+
                     <div className="flex items-center gap-2 sm:scale-100 scale-70">
                         <img src="/Assets/Logo1.png" className="scale-80" alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
@@ -71,8 +93,8 @@ const Navbar = () => {
                         </p>
                     </div>
 
-       
-                    <div className="hidden min-[1200px]:flex items-center gap-8 text-white">
+
+                    <div className="hidden min-[1200px]:flex items-center gap-8">
                         <NavLinks />
                     </div>
                 </div>
@@ -82,9 +104,9 @@ const Navbar = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 className="fixed top-6 right-6 flex flex-col gap-1 mt-5 mr-3 min-[1200px]:hidden z-[1001]"
             >
-                <span className={`w-7 h-[3px] bg-white rounded transition ${isOpen && "rotate-45 translate-y-[7px]"}`} />
-                <span className={`w-7 h-[3px] bg-white rounded transition ${isOpen && "opacity-0"}`} />
-                <span className={`w-7 h-[3px] bg-white rounded transition ${isOpen && "-rotate-45 -translate-y-[7px]"}`} />
+                <span className={`w-7 h-[3px] ${currentTextColor} rounded transition-all ${isOpen && "rotate-45 translate-y-[7px]"}`} />
+                <span className={`w-7 h-[3px] ${currentTextColor} rounded transition-all ${isOpen && "opacity-0"}`} />
+                <span className={`w-7 h-[3px] ${currentTextColor} rounded transition-all ${isOpen && "-rotate-45 -translate-y-[7px]"}`} />
             </button>
 
             <div

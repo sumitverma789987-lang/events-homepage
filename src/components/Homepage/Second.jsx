@@ -20,7 +20,7 @@ const Second = () => {
 
     return (
 
-        <div className="flex min-h-screen flex-col min-[1300px]:flex-row items-center justify-center  px-20 2xl:px-60  gap-15 xl:gap-22 p-5 ">
+        <div className="flex my-20 flex-col min-[1300px]:flex-row items-center justify-center  px-20 2xl:px-60  gap-15 xl:gap-22 p-5 ">
             <div className="relative flex items-center justify-center overflow-hidden">
                 {!playVideo ? (
                     <div
@@ -34,7 +34,6 @@ const Second = () => {
                             className="block max-w-full h-auto"
                         />
 
-                        {/* Play Icon */}
                         <div className="absolute inset-0 flex items-center justify-center">
                             <Play />
                         </div>
@@ -73,8 +72,8 @@ const Second = () => {
               h-[6px] md:h-[8px] z-3">
                     </span>
 
-                    <h1 className='text-[28px] md:text-[40px] lg:text-[48px] font-bold mt-8'> What make us special ?</h1>
-                    <p className='text-[14px] md:text-[16px]  font-normal opacity-70 max-w-[633px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
+                    <h1 className='text-[28px] md:text-[40px] lg:text-[48px] leading-none whitespace-nowrap my-5 font-bold mt-8'> What make us special ?</h1>
+                    <p className='text-[14px] md:text-[16px]  font-normal opacity-70 mb-2 max-w-[633px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
 
                 </div>
                 <div className="flex flex-col    w-full   justify-center items-center min-[1300px]:items-start  ">

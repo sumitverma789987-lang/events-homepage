@@ -25,7 +25,7 @@ const Post = () => {
 
                 <div className='flex flex-col items-start justify-center w-full lg:w-auto'>
                     <div className='flex flex-row items-center justify-start w-full'>
-                        <img src="./assets/Ellipse/Ellipse3.png" className='scale-100 md:scale-125 lg:scale-150 m-4 md:m-6 lg:m-8' alt="" />
+                        <img src="./Assets/Ellipse/Ellipse3.png" className='scale-100 md:scale-125 lg:scale-150 m-4 md:m-6 lg:m-8' alt="" />
                         <div className='flex flex-col items-start justify-center'>
                             <h4 className='font-semibold text-[18px] md:text-[20px] lg:text-[24px]'>Username</h4>
                             <p className='font-normal text-[14px] md:text-[15px] lg:text-[16px] opacity-60'>Post event name</p>

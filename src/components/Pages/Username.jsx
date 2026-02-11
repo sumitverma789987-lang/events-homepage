@@ -10,7 +10,11 @@ import Footer from '../Common/Footer'
 const Username = () => {
   return (
     <div className='w-full'>
-      <Navbar />
+      <Navbar
+        bgColor="bg-white/90 shadow-xl"
+        textColor="text-black"
+        scrolledTextColor="text-black"
+      />
       <section>
           <First/>
       </section>

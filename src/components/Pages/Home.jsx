@@ -11,7 +11,11 @@ import Footer from '../Common/Footer'
 const Home = () => {
     return (
         <div className="w-full">
-            <Navbar />
+            <Navbar
+                bgColor="bg-white/90 shadow-xl"
+                textColor="text-white"
+                scrolledTextColor="text-black"
+            />
 
             <section
                 className="relative min-h-screen bg-cover bg-center"
@@ -28,7 +32,7 @@ const Home = () => {
             </section>
 
 
-            <section className="min-h-screen">
+            <section>
                 <Second />
             </section>
             <section >

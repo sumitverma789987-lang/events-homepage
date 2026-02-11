@@ -31,7 +31,7 @@ export default function Comments({ commentCount, setCommentCount }) {
     };
 
     return (
-        <div className="w-full max-w-[1300px]  mx-auto  ">
+        <div className="w-full max-w-[1150px]  mx-auto  ">
 
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-3 mb-8 items-stretch sm:items-center">

@@ -37,7 +37,7 @@ const First = () => {
                 padding="px-4 py-2 md:px-5 md:py-3"
                 rounded="rounded-[23px]"
                 font="font-semibold"
-                hover="hover:bg-white hover:scale-105 transition-all duration-500 ease-in-out hover:text-[#2C49FE]"
+                hover="hover:bg-white hover:scale-105 transition-all hover:border-1 border-[#2C49FE] duration-500 ease-in-out hover:text-[#2C49FE]"
               />
               <Button
                 text="Show Journey of Feed"
@@ -46,7 +46,7 @@ const First = () => {
                 padding="px-4 py-2 md:px-5 md:py-2"
                 rounded="rounded-[23px]"
                 font="font-semibold"
-                hover="hover:bg-white hover:scale-105 transition-all duration-500 ease-in-out hover:text-[#2C49FE]"
+                hover="hover:bg-white hover:scale-105 transition-all duration-500 hover:border-1 border-[#2C49FE] ease-in-out hover:text-[#2C49FE]"
               />
             </div>
           </div>

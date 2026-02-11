@@ -10,7 +10,11 @@ const Feed = () => {
       
         <div>
             <section>
-                <Navbar/>
+                <Navbar
+                    bgColor="bg-white/90 shadow-xl"
+                    textColor="text-black"
+                    scrolledTextColor="text-black"
+                />
             </section>
             <section>
                 <Profile />
