@@ -1,5 +1,5 @@
 import React from 'react'
-import eventImage from '/Assets/Eventscard.png'
+import eventImage from '/assets/Eventscard.png'
 import { Calender, Janta, Location } from '../Common/Icon'
 import Button from '../Common/Button'
 

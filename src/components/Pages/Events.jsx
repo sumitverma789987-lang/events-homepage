@@ -17,7 +17,7 @@ const Events = () => {
             <section
                 className="relative bg-cover flex items-center before:absolute before:inset-0  before:bg-black/50 before:z-0 h-[400px] md:h-[500px]"
                 style={{
-                    backgroundImage: 'url(/Assets/Header.png)',
+                    backgroundImage: 'url(/assets/Header.png)',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center top'
                 }}

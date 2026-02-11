@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Common/Navbar'
+import bgImage from '/assets/bg-image.png'
 import Text from '../Homepage/Text'
 import Second from '../Homepage/Second'
 import Third from '../Homepage/Third'
@@ -18,13 +19,18 @@ const Home = () => {
 
             <section
                 className="relative min-h-screen bg-cover bg-center"
-                style={{ backgroundImage: `url(/Assets/bg-image.png)` }}
+                style={{ backgroundImage: `url(${bgImage})` }}
             >
+
+
                 <div className="absolute inset-0 bg-black/50" />
+
+
                 <div className="relative z-10 flex min-h-screen">
                     <Text />
                 </div>
             </section>
+
 
             <section>
                 <Second />

@@ -25,7 +25,7 @@ const Post = () => {
 
                 <div className='flex flex-col items-start justify-center w-full lg:w-auto'>
                     <div className='flex flex-row items-center justify-start w-full'>
-                        <img src="./Assets/Ellipse/Ellipse3.png" className='scale-100 md:scale-125 lg:scale-150 m-4 md:m-6 lg:m-8' alt="" />
+                        <img src="./assets/Ellipse/Ellipse3.png" className='scale-100 md:scale-125 lg:scale-150 m-4 md:m-6 lg:m-8' alt="" />
                         <div className='flex flex-col items-start justify-center'>
                             <h4 className='font-semibold text-[18px] md:text-[20px] lg:text-[24px]'>Username</h4>
                             <p className='font-normal text-[14px] md:text-[15px] lg:text-[16px] opacity-60'>Post event name</p>
@@ -57,10 +57,10 @@ const Post = () => {
                 </div>
 
                 <div className='grid grid-cols-2 relative gap-3 md:gap-4 lg:gap-5 grid-rows-2 w-full lg:w-auto px-2 md:px-0'>
-                    <img src="./Assets/Postgrid4.png" className=' md:w-full md:h-auto object-cover rounded-lg' alt="" />
-                    <img src="./Assets/Postgrid3.png" className=' md:w-full md:h-auto object-cover rounded-lg' alt="" />
-                    <img src="./Assets/Postgrid2.png" className=' md:w-full md:h-auto object-cover rounded-lg' alt="" />
-                    <img src="./Assets/Postgrid1.png" className='-mt-5 md:-mt-7 lg:-mt-9 w-full h-auto object-cover rounded-lg' alt="" />
+                    <img src="./assets/Postgrid4.png" className=' md:w-full md:h-auto object-cover rounded-lg' alt="" />
+                    <img src="./assets/Postgrid3.png" className=' md:w-full md:h-auto object-cover rounded-lg' alt="" />
+                    <img src="./assets/Postgrid2.png" className=' md:w-full md:h-auto object-cover rounded-lg' alt="" />
+                    <img src="./assets/Postgrid1.png" className='-mt-5 md:-mt-7 lg:-mt-9 w-full h-auto object-cover rounded-lg' alt="" />
                     <div className='flex flex-col items-center justify-center absolute bottom-6 md:bottom-8 lg:bottom-12 py-2 md:py-3 lg:py-4 px-4 md:px-5 lg:px-7 right-2 md:right-3 lg:right-4 rounded-[15px] md:rounded-[18px] lg:rounded-[20px] bg-white'>
                         <h1 className='text-[24px] md:text-[30px] lg:text-[36px] font-semibold opacity-60'>+15</h1>
                         <p className='font-normal text-[12px] md:text-[14px] lg:text-[16px] opacity-60'>more</p>

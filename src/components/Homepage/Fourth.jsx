@@ -23,10 +23,10 @@ const Fourth = () => {
             </div>
             <div className='flex flex-col md:flex-row gap-5 items-center justify-center'>
                 <Ecard
-                    image="/Assets/Card1.png" />
+                    image="/assets/Card1.png" />
 
                 <Ecard
-                    image="/Assets/Card2.png" />
+                    image="/assets/Card2.png" />
 
             </div>
 

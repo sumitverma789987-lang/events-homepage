@@ -5,9 +5,9 @@ import { Remove } from "../Common/Icon";
 export default function Comments({ commentCount, setCommentCount }) {
     const [newComment, setNewComment] = useState("");
     const [comments, setComments] = useState([
-        { text: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.", user: "Username", avatar: "/Assets/Ellipse/Ellipse1.png" },
-        { text: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.", user: "Username", avatar: "/Assets/Ellipse/Ellipse2.png" },
-        { text: "Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.", user: "Username", avatar: "/Assets/Ellipse/Ellipse3.png" },
+        { text: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.", user: "Username", avatar: "/assets/Ellipse/Ellipse1.png" },
+        { text: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.", user: "Username", avatar: "/assets/Ellipse/Ellipse2.png" },
+        { text: "Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.", user: "Username", avatar: "/assets/Ellipse/Ellipse3.png" },
     ]);
 
     const addComment = () => {
@@ -16,7 +16,7 @@ export default function Comments({ commentCount, setCommentCount }) {
             const newCommentObj = {
                 text: newComment,
                 user: "Username",
-                avatar: `/Assets/Ellipse/Ellipse${randomNum}.png`
+                avatar: `/assets/Ellipse/Ellipse${randomNum}.png`
             };
             setComments([...comments, newCommentObj]);
             setCommentCount(commentCount + 1);
@@ -38,7 +38,7 @@ export default function Comments({ commentCount, setCommentCount }) {
                 <div className="flex flex-col sm:flex-row gap-3 border justify-between border-gray-300 rounded-[20px] sm:rounded-full px-2 py-2 sm:py-2 flex-1">
                     <div className="flex gap-2 items-center flex-1">
                         <img
-                            src="/Assets/Ellipse/Ellipse4.png"
+                            src="/assets/Ellipse/Ellipse4.png"
                             alt="Your avatar"
                             className="w-10 h-10 rounded-full flex-shrink-0"
                         />

@@ -10,7 +10,7 @@ const Footer = () => {
 
                 <div className=' flex flex-col items-start gap-5 justify-center'>
                     <div className='flex flex-row items-center  justify-center'>
-                        <img src="/Assets/Logo1.png" className="scale-80" alt="logo" />
+                        <img src="/assets/Logo1.png" className="scale-80" alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>
                         </p>
@@ -50,33 +50,33 @@ const Footer = () => {
 
 
                             <img
-                                src="/Assets/Footer/Image1.png"
+                                src="/assets/Footer/Image1.png"
                                 alt="gallery1"
                                 className="  object-cover rounded-md"
                             />
 
                             <img
-                                src="/Assets/Footer/Image2.png"
+                                src="/assets/Footer/Image2.png"
                                 alt="gallery2"
                                 className="  object-cover rounded-md"
                             />
 
 
                             <img
-                                src="/Assets/Footer/Image3.png"
+                                src="/assets/Footer/Image3.png"
                                 alt="gallery3"
                                 className="  object-cover rounded-md"
                             />
 
 
                             <img
-                                src="/Assets/Footer/Image4.png"
+                                src="/assets/Footer/Image4.png"
                                 alt="gallery4"
                                 className=" object-cover rounded-md"
                             />
 
                             <img
-                                src="/Assets/Footer/Image5.png"
+                                src="/assets/Footer/Image5.png"
                                 alt="gallery5"
                                 className="  object-cover rounded-md"
                             />

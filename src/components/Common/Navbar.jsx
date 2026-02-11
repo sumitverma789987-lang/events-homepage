@@ -87,7 +87,7 @@ const Navbar = ({
                 <div className="flex justify-between items-center min-[1440px]:px-60 min-[500px]:px-6 px-0 mx-auto">
 
                     <div className="flex items-center gap-2 sm:scale-100 scale-70">
-                        <img src="/Assets/Logo1.png" className="scale-80" alt="logo" />
+                        <img src="/assets/Logo1.png" className="scale-80" alt="logo" />
                         <p className="text-4xl font-bold text-[#2c49fe]">
                             Events<span className="text-[#01c8ff]">Free</span>
                         </p>
