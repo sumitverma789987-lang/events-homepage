@@ -22,7 +22,7 @@ const First = () => {
   return (
     <div className='flex flex-col items-center justify-center mt-10 md:mt-20 lg:mt-45 px-10'>
       <div className='flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-20 w-full max-w-7xl'>
-        <img src="/assets/Event2.png" alt="" className='w-full lg:w-auto max-w-md lg:max-w-none' />
+        <img src="/Assets/Event2.png" alt="" className='w-full lg:w-auto max-w-md lg:max-w-none' />
         <div className='flex flex-col items-start justify-center w-full lg:w-auto'>
           <div className='flex flex-row items-start justify-center font-normal gap-3 text-sm md:text-[16px] opacity-60'>
             <Link to="/"><h4>Home </h4> </Link>&gt;<h4>Username</h4>
@@ -88,7 +88,7 @@ const First = () => {
             >
               <img
                 ref={imgRef}
-                src="/assets/Event1.png"
+                src="/Assets/Event1.png"
                 alt="Hub"
                 className="block w-full h-auto"
               />

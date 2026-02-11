@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImage from '/assets/bgimage.png'
+import bgImage from '/Assets/bgimage.png'
 import { Awards, Participants, Speakers, Topics } from '../Common/Icon'
 
 const Third = () => {

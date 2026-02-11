@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <div className='mt-35 flex flex-col items-center  justify-center   px-10'>
             <div className='flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-20 w-full max-w-7xl'>
-                <img src="./assets/profile1.png" alt="" />
+                <img src="./Assets/Profile1.png" alt="" />
                 <div className='flex flex-col items-start justify-center w-full lg:w-auto'>
                     <div className='flex flex-row items-start justify-center font-normal gap-3 text-sm md:text-[16px] opacity-60'>
                         <Link to="/"><h4>Home </h4> </Link>&gt;<h4>Feed</h4>
@@ -21,7 +21,7 @@ const Profile = () => {
 
                     <div className='flex  flex-col min-[1300px]:flex-row gap-5 items-start lg:items-center mt-5 justify-center'>
                         <div className='flex flex-row items-center gap-5 justify-center rounded-[20px] shadow-[0px_8px_35px_0px_#0000001A] p-3'>
-                            <img src="./assets/Events1.png" alt="" />
+                            <img src="./Assets/Events1.png" alt="" />
                             <div className='flex flex-col items-start justify-center gap-3'>
                                 <h4 className='text-[16px] font-bold'>Augue etiam</h4>
                                 <p className='font-normal text-[12px] text-[#666666]'>Quis et id urna sagittis. <br /> Enim lacus, felis, libero sed <br /> nisl vitae blandit sociis.</p>
@@ -32,7 +32,7 @@ const Profile = () => {
                         <div className='flex flex-col sm:flex-row gap-5'>
 
                             <div className='flex flex-row items-center gap-5 :justify-center rounded-[20px] shadow-[0px_8px_35px_0px_#0000001A] p-3'>
-                                <img src="./assets/Events2.png" alt="" />
+                                <img src="./Assets/Events2.png" alt="" />
                                 <div className='flex flex-col items-start justify-center gap-3'>
                                     <h4 className='text-[16px] font-bold'>Augue etiam</h4>
                                     <p className='font-normal text-[12px] text-[#666666]'>Quis et id urna sagittis. <br /> Enim lacus, felis, libero sed <br /> nisl vitae blandit sociis.</p>

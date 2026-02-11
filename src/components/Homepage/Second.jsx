@@ -29,7 +29,7 @@ const Second = () => {
                     >
                         <img
                             ref={imgRef}
-                            src="/assets/Hub.png"
+                            src="/Assets/Hub.png"
                             alt="Hub"
                             className="block max-w-full h-auto"
                         />

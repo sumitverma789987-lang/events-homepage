@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Common/Navbar'
-import bgImage from '/assets/bg-image.png'
+import bgImage from '/Assets/bg-image.png'
 import Text from '../Homepage/Text'
 import Second from '../Homepage/Second'
 import Third from '../Homepage/Third'

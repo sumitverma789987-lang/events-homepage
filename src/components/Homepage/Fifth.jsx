@@ -10,7 +10,7 @@ const Fifth = () => {
 
       <div className="  flex justify-center">
         <img
-          src="/assets/pillimage.png"
+          src="/Assets/Pillimage.png"
           alt="pill"
 
         />

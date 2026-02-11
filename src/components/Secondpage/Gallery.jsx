@@ -23,17 +23,17 @@ const Gallery = () => {
       <h1 className='font-semibold text-[48px]'>Gallery</h1>
 
       <div className="grid grid-cols-3 grid-rows-3 gap-4 max-w-330 max-h-256.5 mt-10 w-full">
-        <div className="rounded-2xl overflow-hidden"><img src="/assets/Gallery/gallery1.png" alt=""
+        <div className="rounded-2xl overflow-hidden"><img src="/Assets/Gallery/Gallery1.png" alt=""
           className="w-full h-full object-cover" /></div>
-        <div className="rounded-2xl overflow-hidden"><img src="/assets/Gallery/gallery2.png" alt=""
+        <div className="rounded-2xl overflow-hidden"><img src="/Assets/Gallery/Gallery2.png" alt=""
           className="w-full h-full object-cover" /></div>
-        <div className="row-span-2 rounded-2xl overflow-hidden"><img src="/assets/Gallery/gallery3.png"
+        <div className="row-span-2 rounded-2xl overflow-hidden"><img src="/Assets/Gallery/Gallery3.png"
           alt="" className="w-full h-full object-cover" /></div>
-        <div className="col-span-2 rounded-2xl overflow-hidden"><img src="/assets/Gallery/gallery4.png"
+        <div className="col-span-2 rounded-2xl overflow-hidden"><img src="/Assets/Gallery/Gallery4.png"
           alt="" className="w-full h-full object-cover" /></div>
-        <div className="rounded-2xl overflow-hidden"><img src="/assets/Gallery/gallery5.png" alt=""
+        <div className="rounded-2xl overflow-hidden"><img src="/Assets/Gallery/Gallery5.png" alt=""
           className="w-full h-full object-cover" /></div>
-        <div className="col-span-2 rounded-2xl overflow-hidden"><img src="/assets/Gallery/gallery6.png"
+        <div className="col-span-2 rounded-2xl overflow-hidden"><img src="/Assets/Gallery/Gallery6.png"
           alt="" className="w-full h-full object-cover" /></div>
       </div>
       <div className="flex flex-col items-center justify-center mt-15 mb-10">
