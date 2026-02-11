@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../Common/Navbar'
-
 import Text from '../Homepage/Text'
 import Second from '../Homepage/Second'
 import Third from '../Homepage/Third'

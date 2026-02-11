@@ -1,5 +1,4 @@
 import React from 'react'
-import bgimage from '/Assets/Header.png'
 import Header from '../Events/Header'
 import Navbar from '../Common/Navbar'
 import Eventcards from '../Events/Eventcards'
@@ -16,9 +15,9 @@ const Events = () => {
                 />
             </section>
             <section
-                className="relative bg-cover flex items-center before:absolute before:inset-0  before:bg-black/50 before:z-0 h-[400px] md:h-[500px]" // Set specific height
+                className="relative bg-cover flex items-center before:absolute before:inset-0  before:bg-black/50 before:z-0 h-[400px] md:h-[500px]"
                 style={{
-                    backgroundImage: `url(${bgimage})`,
+                    backgroundImage: 'url(/Assets/Header.png)',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center top'
                 }}
@@ -28,10 +27,10 @@ const Events = () => {
                 </div>
             </section>
             <section>
-                <Eventcards/>
+                <Eventcards />
             </section>
             <section>
-                <Footer/>
+                <Footer />
             </section>
         </div>
     )
